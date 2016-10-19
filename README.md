@@ -3,10 +3,10 @@
 
 
 
-Dockerfile for 
+Dockerfile for Myungchul Shin patches on syntaxnet
 https://github.com/dsindex/syntaxnet/blob/master/README_api.md
 
-Derived work from 
+Original API work from David Mansfield
 https://github.com/dmansfield/parsey-mcparseface-api
 
 
