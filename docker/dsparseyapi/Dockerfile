@@ -43,6 +43,8 @@ CMD ["/bin/bash"]
 
 # COMMANDS to build and run API Server
 # ===============================
+# docker-compose up
+#
 # mkdir build && cp Dockerfile build/ && cd build
 # docker build -t dssyntaxnet .
 # docker run dssyntaxnet --net=host -p 9000:9000
