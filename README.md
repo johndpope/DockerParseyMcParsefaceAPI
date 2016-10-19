@@ -2,6 +2,13 @@
 ![Alt text](https://raw.githubusercontent.com/johndpope/DockerParseyMcParsefaceAPI/master/images/google-open-sources-parsey-mcparseface.jpg "Parsey")
 
 
+![Alt text](https://msopentech.com/wp-content/uploads/dockericon.png "Docker")
+
+
+https://docs.docker.com/engine/installation/
+
+
+
 
 Dockerfile for Myungchul Shin patches on syntaxnet
 https://github.com/dsindex/syntaxnet/blob/master/README_api.md
