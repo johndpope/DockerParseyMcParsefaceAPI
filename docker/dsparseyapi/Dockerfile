@@ -44,21 +44,7 @@ CMD ["/bin/bash"]
 
 # COMMANDS to build and run API Server
 # ===============================
-# docker-compose up
+# from root run
+# make start
 #
-# mkdir build && cp Dockerfile build/ && cd build
-# docker build -t dsparseyapi .
-# docker run dsparseyapi --net=host -p 9000:9000
-# docker run -it dsparseyapi  /bin/bash
 
-# CLIENT (WIP) 
-# In another terminal, run the client
-# ===============================
-# Node JS
-# https://github.com/dmansfield/parsey-mcparseface-api/tree/master/parsey_client
-# Python client
-# https://github.com/dsindex/syntaxnet/blob/master/api/parsey_client.py
-#
-# docker network inspect bridge // find the ip address eg. "IPv4Address": "172.17.0.2/16"
-# TODO - make this work. 
-# telnet 0.0.0.0 9000
