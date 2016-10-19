@@ -1,4 +1,4 @@
-# DockerParseyAPI
+# Docker Parsey McParseface - API
 ![Alt text](https://raw.githubusercontent.com/johndpope/DockerParseyMcParsefaceAPI/master/images/google-open-sources-parsey-mcparseface.jpg "Parsey")
 
 
