@@ -30,5 +30,5 @@ node index.js
 ```
 
 
-TODO - add sample ios swift project
+
 https://github.com/apple/swift-protobuf
