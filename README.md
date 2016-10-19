@@ -18,7 +18,8 @@ Will build a version of parsey mcparseface with patches to expose protobuffers  
 ## Proto format
 https://github.com/johndpope/DockerParseyMcParsefaceAPI/blob/master/clients/node_client/api/syntaxnet/sentence.proto
 
-```syntax = "proto3";
+```protobuf
+syntax = "proto3";
 
 package cali.nlp;
 
