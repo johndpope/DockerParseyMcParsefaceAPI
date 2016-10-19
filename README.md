@@ -19,17 +19,8 @@ Troubles?
 make rebuild-all
 ```
  
-Will build a version of parsey mcparseface with patches to expose protobuffers   
-service will fire up on 0.0.0.0:9000
+Will build a version of parsey mcparseface with patches to expose protobuffers  on http://0.0.0.0:9000
 
-
-Use docker attach to grab instance 
-
-
-```
-docker ps // find the associated container id
-docker attach containerId
-```
 
 
 
