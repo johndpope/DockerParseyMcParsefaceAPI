@@ -3,6 +3,9 @@
 Dockerfile for 
 https://github.com/dsindex/syntaxnet/blob/master/README_api.md
 
+Derived work from 
+https://github.com/dmansfield/parsey-mcparseface-api
+
 
 ```
 make start
