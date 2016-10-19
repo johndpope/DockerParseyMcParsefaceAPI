@@ -15,6 +15,28 @@ make rebuild-all
 Will build a version of parsey mcparseface with patches to expose protobuffers  on http://0.0.0.0:9000
 
 
+## Proto format
+https://github.com/johndpope/DockerParseyMcParsefaceAPI/blob/master/clients/node_client/api/syntaxnet/sentence.proto
+
+```
+syntax = "proto3";
+
+package cali.nlp;
+
+import "syntaxnet/sentence.proto";
+
+message ParseyRequest {
+  repeated string text = 1;
+};
+
+message ParseyResponse {
+  repeated syntaxnet.Sentence result = 1;
+};
+
+service ParseyService {
+  rpc Parse(ParseyRequest) returns (ParseyResponse);
+}
+```
 
 
 
