@@ -4,15 +4,12 @@
 help:
 	@echo "dbshell                  Enter a SQL shell"
 	@echo "help                     This help message"
-	@echo "manage.py                Execute manage.py command. E.g. "make manage.py migrate""
 	@echo "pyshell                  Enter local django shell"
 	@echo "rebuild                  (Re)build docker dsparseyapi container"
 	@echo "rebuild-all              (Re)build all docker containers"
 	@echo "shell                    Enter local bash shell in dsparseyapi container"
 	@echo "start                    Startup all docker containers - see the logs"
 	@echo "stop                     Stop all docker-compose containers"
-	@echo "test                     Run some tests"
-	@echo '                         Use `make freeze-requirements extra=--upgrade` to upgrade already freezed dependencies'
 
 rebuild:
 	# docker-compose build workers
