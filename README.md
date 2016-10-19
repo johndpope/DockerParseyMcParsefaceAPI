@@ -1,29 +1,13 @@
 # Docker Parsey McParseface - API
 
-![Alt text](https://msopentech.com/wp-content/uploads/dockericon.png "Docker")
-
-![Alt text](https://raw.githubusercontent.com/johndpope/DockerParseyMcParsefaceAPI/master/images/google-open-sources-parsey-mcparseface.jpg "Parsey")
-
-
-
-
+## Installation
 https://docs.docker.com/engine/installation/
-
-
-
-
-Dockerfile for Myungchul Shin patches on syntaxnet
-https://github.com/dsindex/syntaxnet/blob/master/README_api.md
-
-Original API work from David Mansfield
-https://github.com/dmansfield/parsey-mcparseface-api
-
 
 ```
 make start
 ```
 
-Troubles? 
+## Troubles? 
 ```
 make rebuild-all
 ```
@@ -34,12 +18,20 @@ Will build a version of parsey mcparseface with patches to expose protobuffers  
 
 
 
-#OSX - Node Client
+## OSX - Node Client
 ![Alt text](https://raw.githubusercontent.com/johndpope/DockerParseyAPI/master/images/node_results.png "Node JS client")
 
 https://github.com/johndpope/DockerParseyAPI/tree/master/clients/node_client
 
 
-#ios - Client
+## ios - Client
 https://github.com/johndpope/DockerParseyAPI/tree/master/clients/ios_client
 
+
+
+## Credits
+Dockerfile for Myungchul Shin patches on syntaxnet
+https://github.com/dsindex/syntaxnet/blob/master/README_api.md
+
+Original API work from David Mansfield
+https://github.com/dmansfield/parsey-mcparseface-api
