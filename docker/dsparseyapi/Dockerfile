@@ -46,9 +46,9 @@ CMD ["/bin/bash"]
 # docker-compose up
 #
 # mkdir build && cp Dockerfile build/ && cd build
-# docker build -t dssyntaxnet .
-# docker run dssyntaxnet --net=host -p 9000:9000
-# docker run -it dssyntaxnet  /bin/bash
+# docker build -t dsparseyapi .
+# docker run dsparseyapi --net=host -p 9000:9000
+# docker run -it dsparseyapi  /bin/bash
 
 # CLIENT (WIP) 
 # In another terminal, run the client
