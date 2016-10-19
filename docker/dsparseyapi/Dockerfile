@@ -1,9 +1,11 @@
+# Use this docker-compose.yml file to start services.
+# https://github.com/johndpope/DockerParseyAPI
+
 # https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/docker
 # https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/Dockerfile.devel
 # https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/Dockerfile.devel-gpu
 
 
-#FROM brianlow/syntaxnet
 FROM gcr.io/tensorflow/tensorflow:latest-devel
 
 ENV SYNTAXNETDIR=/work/serving/tensorflow PATH=$PATH:/root/bin
@@ -17,6 +19,7 @@ RUN apt-get update && apt-get install -y \
         libpng12-dev \
         libzmq3-dev \
         libcurl3-dev \
+        #libgrpc-dev \
         pkg-config \
         python-dev \
         python-numpy \
@@ -35,19 +38,24 @@ RUN  wget https://gist.githubusercontent.com/johndpope/fc1c2327a4ae255d9c44dda9b
 EXPOSE 9000
 RUN find / -name "parsey_api" -size +512k  |xargs cp -t  /work/ 
 CMD ["/bin/bash"]
-#RUN /work/parsey_api --port=9000 /work/api/parsey_model
-#ENTRYPOINT ["/work/parsey_api --port=9000 /work/api/parsey_model"]
+#CMD ["/work/parsey_api --port=9000 /work/api/parsey_model"]
 
 
 # COMMANDS to build and run API Server
 # ===============================
 # mkdir build && cp Dockerfile build/ && cd build
-# docker build -t dsparseyapi .
-# docker run dsparseyapi -p 9000:9000
-# docker run -it dsparseyapi  /bin/bash
+# docker build -t dssyntaxnet .
+# docker run dssyntaxnet --net=host -p 9000:9000
+# docker run -it dssyntaxnet  /bin/bash
 
-# CLIENT (WIP)
+# CLIENT (WIP) 
+# In another terminal, run the client
 # ===============================
+# Node JS
+# https://github.com/dmansfield/parsey-mcparseface-api/tree/master/parsey_client
+# Python client
+# https://github.com/dsindex/syntaxnet/blob/master/api/parsey_client.py
+#
 # docker network inspect bridge // find the ip address eg. "IPv4Address": "172.17.0.2/16"
 # TODO - make this work. 
-# telnet 172.17.0.2 9000
+# telnet 0.0.0.0 9000
