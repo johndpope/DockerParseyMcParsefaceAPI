@@ -3,7 +3,7 @@ services:
 
   dsparseyapi:
     build: docker/dsparseyapi
-    command: /work/parsey_api --port=9000 /work/api/parsey_model
+    command: /work/serving/parsey_api --port=9000 /work/api/parsey_model
     volumes:
       - .:/root
     ports:
