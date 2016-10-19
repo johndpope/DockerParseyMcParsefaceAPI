@@ -1,8 +1,10 @@
 # Docker Parsey McParseface - API
+
+![Alt text](https://msopentech.com/wp-content/uploads/dockericon.png "Docker")
+
 ![Alt text](https://raw.githubusercontent.com/johndpope/DockerParseyMcParsefaceAPI/master/images/google-open-sources-parsey-mcparseface.jpg "Parsey")
 
 
-![Alt text](https://msopentech.com/wp-content/uploads/dockericon.png "Docker")
 
 
 https://docs.docker.com/engine/installation/
