@@ -11,7 +11,7 @@ Will build a version of parsey mcparseface with patches to expose protobuffers
 service will fire up on 0.0.0.0:9000
 
 
-#OSX - for Client
+#OSX - Client
 ```
 brew install node 
 npm install grpc
@@ -29,4 +29,6 @@ cd parsey_client
 node index.js
 ```
 
+
+TODO - add sample ios swift project
 https://github.com/apple/swift-protobuf
