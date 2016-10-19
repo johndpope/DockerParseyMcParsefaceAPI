@@ -4,9 +4,15 @@ Dockerfile for
 https://github.com/dsindex/syntaxnet/blob/master/README_api.md
 
 
+```
+make start
+```
 
-docker-compose up
-
+Troubles? 
+```
+make rebuild-all
+```
+ 
 Will build a version of parsey mcparseface with patches to expose protobuffers   
 service will fire up on 0.0.0.0:9000
 
