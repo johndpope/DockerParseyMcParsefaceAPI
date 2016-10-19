@@ -1,5 +1,10 @@
 # DockerParseyAPI
 
+Dockerfile for 
+https://github.com/dsindex/syntaxnet/blob/master/README_api.md
+
+
+
 docker-compose up
 
 Will build a version of parsey mcparseface with patches to expose protobuffers   
@@ -7,9 +12,11 @@ service will fire up on 0.0.0.0:9000
 
 
 #OSX   
-brew install node  
+```
+brew install node 
+```
 
-
+```
 cd clients   
 cd node_client   
 npm install   
