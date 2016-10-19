@@ -1,1 +1,3 @@
 # DockerParseyAPI
+
+docker-compose up
