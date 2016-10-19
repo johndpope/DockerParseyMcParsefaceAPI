@@ -1,5 +1,6 @@
 # Docker Parsey McParseface - API
 
+
 ## Installation
 https://docs.docker.com/engine/installation/
 
@@ -57,3 +58,19 @@ https://github.com/dsindex/syntaxnet/blob/master/README_api.md
 
 Original API work from David Mansfield
 https://github.com/dmansfield/parsey-mcparseface-api
+
+
+
+
+## TensorFlow   
+https://github.com/tensorflow/tensorflow/
+
+## Parsey McParseface / Syntaxnet   
+https://github.com/tensorflow/models/tree/master/syntaxnet
+
+## Protocol Buffers   
+https://developers.google.com/protocol-buffers/
+
+## Docker   
+https://www.docker.com/
+
