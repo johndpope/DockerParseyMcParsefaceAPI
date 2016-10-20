@@ -1,5 +1,11 @@
 # Docker Parsey McParseface - API
 
+![Animation](https://github.com/tensorflow/models/raw/master/syntaxnet/looping-parser.gif "Parsing in Action")
+
+
+
+https://2.bp.blogspot.com/-fqtmVS97tOs/VzTEAI9BQ8I/AAAAAAAAA_U/xPj0Av64sGseS0rF4Z1BbhmS77J-HuEvwCLcB/s640/image04.gif
+
 
 ## Installation
 https://docs.docker.com/engine/installation/
