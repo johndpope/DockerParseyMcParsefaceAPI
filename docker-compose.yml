@@ -1,6 +1,13 @@
 version: '2'
 services:
 
+  swift3:
+    build: docker/swift3
+    volumes:
+      - .:/root
+    ports:
+      - "2222:22"
+
   dsparseyapi:
     build: docker/dsparseyapi
     command: /work/serving/parsey_api --port=9000 /work/api/parsey_model
@@ -31,4 +38,3 @@ services:
       - docker/base.env
     volumes:
       - ".dbcache:/var/lib/postgresql/data"
-
