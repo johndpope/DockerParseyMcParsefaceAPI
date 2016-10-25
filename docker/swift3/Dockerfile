@@ -15,7 +15,7 @@ RUN echo 'root:alpine' | chpasswd
 RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 # Install Basic Packages
-RUN apt-get install -y  nano tmux colord zsh emacs
+RUN apt-get install -y  unzip nano tmux colord zsh emacs
 
 
 #install ZSH
@@ -35,7 +35,7 @@ EXPOSE 22
 CMD ["/usr/bin/supervisord"]
 # CMD ["zsh"]
 # docker build -t swift3-ssh .  
-# https://github.com/swiftdocker/docker-swift/issues/9#issuecomment-162172540
-# sudo docker run --security-opt seccomp=unconfined -p 2222:22 -i -t swift3-ssh 
+# docker run -p 2222:22 -i -t swift3-ssh
 # docker ps # find container id
-# docker exec -it <containerid> /usr/bin/zsh 
+# docker exec -i -t <containerid> /usr/bin/zsh
+
