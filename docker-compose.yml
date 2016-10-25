@@ -7,6 +7,7 @@ services:
       - .:/root
     ports:
       - "2222:22"
+    privileged: true
 
   dsparseyapi:
     build: docker/dsparseyapi
