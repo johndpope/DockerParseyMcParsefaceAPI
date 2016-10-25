@@ -35,7 +35,8 @@ EXPOSE 22
 CMD ["/usr/bin/supervisord"]
 # CMD ["zsh"]
 # docker build -t swift3-ssh .  
-# docker run -p 2222:22 -i -t swift3-ssh
+# https://github.com/swiftdocker/docker-swift/issues/9#issuecomment-162172540
+# sudo docker run --security-opt seccomp=unconfined -p 2222:22 -i -t swift3-ssh 
 # docker ps # find container id
 # docker exec -i -t <containerid> /usr/bin/zsh
 
