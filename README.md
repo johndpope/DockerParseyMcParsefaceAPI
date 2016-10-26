@@ -1,4 +1,4 @@
-# Docker Parsey McParseface - API
+# Docker Parsey McParseface - gRPC - API
 
 ![Animation](https://github.com/tensorflow/models/raw/master/syntaxnet/looping-parser.gif "Parsing in Action")
 
