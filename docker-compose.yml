@@ -18,24 +18,24 @@ services:
       - "9000:9000"
     #environment:
    #   - REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
-    depends_on:
-      - db
+    #depends_on:
+      #- db
       # - cache
       # - broker
       # - workers
-    links:
-      - db
+    #links:
+      #- db
       # - cache
       # - broker
       # - workers
     env_file:
           - docker/base.env
-  db:
-    build: docker/postgres
-    image: postgres
-    ports:
-      - "5432:5432"
-    env_file:
-      - docker/base.env
-    volumes:
-      - ".dbcache:/var/lib/postgresql/data"
+  #db:
+  #  build: docker/postgres
+  #  image: postgres
+  #  ports:
+  #    - "5432:5432"
+  #  env_file:
+  #    - docker/base.env
+  #  volumes:
+  #    - ".dbcache:/var/lib/postgresql/data"
