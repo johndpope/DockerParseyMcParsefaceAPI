@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y \
         python-numpy \
         python-pip \
         software-properties-common \
-        swig \ 
+        swig \
         wget \
         zip \
         zlib1g-dev
