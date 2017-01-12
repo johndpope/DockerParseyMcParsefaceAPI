@@ -36,7 +36,7 @@ RUN  wget https://gist.githubusercontent.com/johndpope/fc1c2327a4ae255d9c44dda9b
     
 
 EXPOSE 9000
-RUN find / -name "parsey_api" -size +512k  |xargs cp -t  /work/serving 
+RUN find / -name "parsey_api" -size +512k -exec cp -t "{}" /work/serving \;
 RUN cd /work/serving
 WORKDIR /work/serving
 CMD ["/bin/bash"]
