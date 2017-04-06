@@ -1,3 +1,15 @@
+# HELP WANTED     
+
+FYI - this will clone / build docker parsey - it can take > 60 mins to compile.    
+If you're intention is to simply tokenize sentences - you may get a lot of mileage out of NLTK.     
+http://www.nltk.org/      
+
+After faffing around for weeks getting this to compile - I think a smarter way forward is to spit out a binary and include in this repo as opposed to building all sources.     
+
+If someone can help script this downloading / pegged to a git commit I'd welcome this as a PR.     
+
+
+
 # Docker Parsey McParseface - gRPC - API
 
 ![Animation](https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2016/05/looping-parser.gif "Parsing in Action")
